@@ -91,7 +91,7 @@
 .BSAS__a__der {
           padding: 10px;
           color: white;
-          /*text-decoration: none;*/
+          text-decoration: none;
           border: 1px solid green;
           border-radius: 4px;
           background-color: green;
@@ -106,7 +106,7 @@
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          width: 100%;
+          width: 80%;
           margin: auto;
           align-content: center;
           text-align: left;
@@ -118,12 +118,14 @@
           padding: 20px;
           margin-top: 15px;
           margin-bottom: 15px;
+          
 }
 
 .tarjeta img {
           width: 220px;
           border-radius: 10px;;
           border-radius: 10px;
+          
 }
 
 
