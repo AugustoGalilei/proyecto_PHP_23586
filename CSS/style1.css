@@ -110,6 +110,7 @@
           margin: auto;
           align-content: center;
           text-align: left;
+          
 }
 
 .tarjeta {
@@ -205,7 +206,7 @@
                     background-color: rgb(157, 201, 90);
                     border: none;
                     width: 510px;
-                    height: 40px;
+                    
                     color: white;
                                   }
                  
