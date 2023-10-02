@@ -111,6 +111,7 @@
           align-content: center;
           text-align: left;
           
+         
 }
 
 .tarjeta {
@@ -198,7 +199,11 @@
                                   }
                  
 .casilleros {
-                    margin-top: 20px;                 
+                    margin-top: 20px;   
+              
+                 }
+                 .casilleros input,textarea{
+                  padding:10px;
                  }
                  
 .enviar input {
