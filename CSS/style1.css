@@ -24,6 +24,7 @@
 
    display: flex;
    align-items: center;
+  
 }
 
 .header__nav {
@@ -34,7 +35,8 @@
    list-style: none;
 }
 @media only screen and (max-width: 600px) {
-   .header__nav {display:block;}
+   .header__nav {display:block;
+   }
  }
 
 .header__nav__ul__li {
@@ -203,22 +205,26 @@
    text-align: center;
    margin-top: 20px;
    margin-bottom: 10px;
+   
 }
 
 .casilleros {
    margin-top: 20px;
+width:100%  ; 
 
 }
 
 .casilleros input, textarea {
    padding: 10px;
+   width:510px;height:100px;
 }
 
 .enviar input {
    margin-top: 20px;
    background-color: rgb(157, 201, 90);
    border: none;
-   width: 510px;
+   /*width: 510px;*/
+   width:100%;
    height: 40px;
    color: white;
 }
@@ -247,3 +253,7 @@
    margin: 15px;
    font-size: 1.1rem;
 }
+@media only screen and (max-width: 600px) {
+   .contenedor__footer {display:block;
+   }
+ }
