@@ -33,6 +33,9 @@
    justify-content: end;
    list-style: none;
 }
+@media only screen and (max-width: 600px) {
+   .header__nav {display:block;}
+ }
 
 .header__nav__ul__li {
    font-size: 1.1rem;
