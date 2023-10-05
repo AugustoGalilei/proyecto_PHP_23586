@@ -24,7 +24,14 @@
 
    display: flex;
    align-items: center;
-  
+
+}
+
+@media only screen and (max-width: 1300px) {
+   .header__contenedorLogo__anclaLogo {
+      display: block;
+   }
+
 }
 
 .header__nav {
@@ -34,39 +41,46 @@
    justify-content: end;
    list-style: none;
 }
-@media only screen and (max-width: 600px) {
-   .header__nav {display:block;
-   }
- }
 
 .header__nav__ul__li {
    font-size: 1.1rem;
+   padding-bottom: 15px;
+   padding-left: 15px;
 }
 
 .header__nav__ul__li__a {
    display: flex;
    flex-wrap: wrap;
-   color: white;
+   color: rgb(194, 194, 194);
    text-decoration: none;
    padding-right: 20px;
 }
 
+.laconferencia {
+   color: #fff;
+}
+
+.comprartickets {
+   color: rgb(149, 244, 149);
+}
+
 .main {
-   height: 100vh;
+
+  /* height: 100vh;*/
 }
 
 .BSAS__contenedor {
    display: flex;
    flex-wrap: wrap;
    background-position: center;
-   /* height: 550px;*/
-   height: 100vh;
+    height: 100vh;
+   
    background-size: cover;
    background: linear-gradient(to right top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('../assets/img/ba1.jpg');
    justify-content: end;
    align-items: end;
-   padding-bottom: 100px;
-   height: 100vh;
+   
+
 }
 
 .BSAS__contenedor__texto {
@@ -173,6 +187,12 @@
    display: flex;
 }
 
+@media only screen and (max-width: 400px) {
+   .contenedor__Lugar {
+      display: block;
+   }
+}
+
 .Lugar__img {
    width: 50%;
    background-size: 100%;
@@ -187,6 +207,16 @@
    padding: 20px;
    padding-bottom: 30px;
    width: 50%;
+}
+@media only screen and (max-width: 400px) {
+   .Lugar__img {
+  
+  width:100%;
+   }
+   .Lugar__texto {
+  
+      width:100%;
+       }
 }
 
 .Lugar__texto p {
@@ -205,18 +235,19 @@
    text-align: center;
    margin-top: 20px;
    margin-bottom: 10px;
-   
+
 }
 
 .casilleros {
    margin-top: 20px;
-width:100%  ; 
+   width: 100%;
 
 }
 
 .casilleros input, textarea {
    padding: 10px;
-   width:510px;height:100px;
+   width: 510px;
+   height: 100px;
 }
 
 .enviar input {
@@ -224,26 +255,34 @@ width:100%  ;
    background-color: rgb(157, 201, 90);
    border: none;
    /*width: 510px;*/
-   width:100%;
+   width: 100%;
    height: 40px;
    color: white;
 }
-
+@media only screen and (max-width: 500px) {
+   textarea {
+    
+      width:400px ;
+      height:50px;
+      
+   }
+}
 
 .contenedor__footer {
    display: flex;
-   height: 80px;
-   
+   flex-wrap:wrap;
+   justify-content: center;
+   align-items: center;height: 150px;
+
    background-image: linear-gradient(to right top, #1c3643, #1e4255, #1f4e67, #215b7a, #24678e);
 
-   justify-content: center;
-   align-items: center;
+   
    list-style: none;
 }
 
 .nav__footer {
    align-items: center;
-   
+
 }
 
 .nav__footer a {
@@ -253,7 +292,4 @@ width:100%  ;
    margin: 15px;
    font-size: 1.1rem;
 }
-@media only screen and (max-width: 600px) {
-   .contenedor__footer {display:block;
-   }
- }
+
