@@ -273,18 +273,19 @@
    display: flex;
    flex-wrap:wrap;
    justify-content: center;
-   align-items: center;height: 150px;
+   align-items: center;
+   height: 100px;
 
    background-image: linear-gradient(to right top, #1c3643, #1e4255, #1f4e67, #215b7a, #24678e);
 
    
    list-style: none;
 }
-
+/*
 .nav__footer {
    align-items: center;
 
-}
+}*/
 
 .nav__footer a {
    color: white;
