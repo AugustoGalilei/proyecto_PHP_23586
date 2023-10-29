@@ -6,70 +6,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comprar Tickets</title>
     <link rel="shortcut icon" href="../favicom.ico" type="image/x-icon">
-    <LINK REL=StyleSheet HREF="../CSS/style.css" TYPE="text/css" MEDIA=screen>
-<!-- fuentes-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-    </head>
+    <LINK REL=StyleSheet HREF="../CSS/style1.css" TYPE="text/css" MEDIA=screen>
+    <!-- fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
 
 <body>
     <header>
 
         <section class="header">
-            <div class="header__contenedorLogo__anclaLogo">
-                <a href=https://buenosaires.gob.ar/educacion/codo-codo-40 target="_blank">
-                    <img src="../assets/img/codoacodo.png" alt="Logo Codo a Codo 4.0">
-                </a>
-                <h1 class="header__contenedorLogo__h1">Conf Bs As</h1>
+
+            <h1 class="header__contenedorLogo__h1">Conf Bs As</h1>
             </div>
 
             <nav class="header__nav">
 
                 <ul class="header__nav__ul"></ul>
                 <li class="header__nav__ul__li">
-                    <a class="header__nav__ul__li__a" href="../index.html">La conferencia</a>
+                    <a class="header__nav__ul__li__a laconferencia" href="../index.html">La conferencia</a>
                 </li>
                 <li class="header__nav__ul__li">
-                    <a class="header__nav__ul__li__a" href="../index.html">Los oradores</a>
+                    <a class="header__nav__ul__li__a" href="#oradores">Los oradores</a>
                 </li>
                 <li class="header__nav__ul__li">
-                    <a class="header__nav__ul__li__a" href="#lugarfecha">El lugar y la fecha</a>
+                    <a class="header__nav__ul__li__a" href="#lugar">El lugar y la
+                        fecha</a>
                 </li>
                 <li class="header__nav__ul__li">
-                    <a class="header__nav__ul__li__a" href="#formularioorador">Conviértete en orador</a>
+                    <a class="header__nav__ul__li__a" href="#formularioorador">Conviértete
+                        en orador</a>
                 </li>
-                <li class="header__nav__ul__li">
-                    <a class="header__nav__ul__li__a" href="./pages/tickets.html">Comprar tickets</a>
+                <li class="header__nav__ul__li ">
+                    <a class="header__nav__ul__li__a comprartickets" href="#tickets">Comprar tickets</a>
                 </li>
-                </ul>
+
             </nav>
+
         </section>
 
 
 
-        <section class="BSAS__contenedor" id="conferencia">
 
-            <div class="BSAS__contenedor__texto">
-                <h1>Conf Bs As</h1>
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque omnis, debitis possimus autem nam
-                    nemo fuga delectus ipsa, repellat, facilis quas cupiditate. Culpa illum nam tempora unde iure
-                    ratione?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium non tempora eligendi
-                    provident distinctio iusto itaque magnam officiis quis. Laborum quos ipsam perspiciatis minima omnis
-                    impedit accusamus rerum cupiditate molestiae?
-
-                </p>
-                <div class="BSAS__contenedor__a">
-                    <a href="#" class="BSAS__a__izq">Quiero ser orador</a>
-                    <a href="#" class="BSAS__a__der">Comprar tickets</a>
-                </div>
-            </div>
-        </section>
     </header>
-    
-    <aside>
-        <p>publicidad</p>
-    </aside>
+
+    <section>
+
+        <div class="contenedorTarjetas">
+            <div class="tarjeta_tickets tarjeta_tickets_estudiante">
+                <h3>Estudiante</h3>
+                <p class="parrafo_tarjeta">Tienen un descuento</p>
+                <h3>80%</h3>
+                <p class="presentar_doc">*presentar documentación</p>
+            </div>
+
+            <div class="tarjeta_tickets tarjeta_tickets_trainee">
+                <h3>Trainee</h3>
+                <p class="parrafo_tarjeta">Tienen un descuento</p>
+                <h3>50%</h3>
+                <p class="presentar_doc">*presentar documentación</p>
+            </div>
+            <div class="tarjeta_tickets tarjeta_tickets_junior">
+                <h3>Junior</h3>
+                <p class="parrafo_tarjeta">Tienen un descuento</p>
+                <h3>15%</h3>
+                <p class="presentar_doc">*presentar documentación</p>
+            </div>
+        </div>
+    </section>
+    <section class="venta_valor_ticket_contenedor">
+
+        <span>Venta</span>
+        <h2>Valor de Ticket $200 </h2>
+
+
+        <form action="" method="">
+
+            <div class="casilleros">
+                <label for="nombre"></label>
+                <input style="width:252px; height:30px" type="text" name="nombre" placeholder="Nombre" required>
+
+                <label for="apellido"></label>
+                <input style="width:252px; height:30px" type="text" name="apellido" placeholder="Apellido" required>
+            </div>
+
+            <div class="casilleros">
+                <label for="correo"></label>
+                <input style="width:510px; height:30px" type="email" name="correo" placeholder="Correo" required>
+                
+
+                    <div class="contenedor_label">
+                        <div class="label">
+                            <label for="cantidad">Cantidad</label>
+                            <div class="casilleros">
+                            <input style="width:250px; height:30px" type="number" name="cantidad" placeholder="cantidad"
+                                required min="1">
+                            </div>
+                        </div>
+                    
+                    <div >
+                        <div class="label">
+                            <label for="categoria">Categoria</label>
+                            <div class="casilleros"></div>
+                            <select class="selector" name="categoria" style="width:250px;">
+                                <option value="junior">Junior</option>
+                                <option value="trainee">Trainee</option>
+                                <option value="estudiante">Estudiante</option>
+
+                            </select>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+
+
+
+                    <div class="contenedor_total_pagar"></div>
+                    <div class="total_pagar">
+                        <p>Total a Pagar: $</p>
+                    </div>
+                    <div class="botones">
+                        <input class="aplicar" type="reset" value="Borrar">
+                        <input class="aplicar" type="submit" value="Resumen">
+                    </div>
+                </div>
+
+
+
+
+
+
+        </form>
+
+    </section>
+
     <footer class="contenedor__footer">
         <nav class="nav__footer">
             <a href="">Preguntas Frecuentes</a>
@@ -80,13 +152,10 @@
             <a href="">Privacidad</a>
             <a href="">Estudiantes</a>
         </nav>
-        <div class="ws">
-            <a href="https://www.whatsapp.com/" target="_blank">
-                <p>wsp</p>
-            </a>
-        </div>
-    </footer>
 
+    </footer>
+    <script src="../JS/venta-tickets.js"></script>
+</body>
 </body>
 
 </html>
