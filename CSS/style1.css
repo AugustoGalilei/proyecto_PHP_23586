@@ -1,3 +1,389 @@
+<<<<<<< HEAD
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+   background-color: rgb(70, 76, 82);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 50px;
+   padding-right: 50px;
+   color: white;
+   height: 15vh;
+}
+
+.header img {
+   width: 150px;
+
+}
+
+.header__contenedorLogo__anclaLogo {
+
+   display: flex;
+   align-items: center;
+
+}
+
+@media only screen and (max-width: 1300px) {
+   .header__contenedorLogo__anclaLogo {
+
+      display: block;
+   }
+
+}
+
+.header__nav {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: end;
+   list-style: none;
+}
+
+.header__nav__ul__li {
+   font-size: 1.1rem;
+   padding-bottom: 15px;
+   padding-left: 15px;
+}
+
+.header__nav__ul__li__a {
+   display: flex;
+   flex-wrap: wrap;
+   color: rgb(194, 194, 194);
+   text-decoration: none;
+   padding-right: 20px;
+   padding-top: 10px;
+}
+
+.laconferencia {
+   color: #fff;
+}
+
+.comprartickets {
+   color: rgb(149, 244, 149);
+}
+
+
+
+.BSAS__contenedor {
+   display: flex;
+   flex-wrap: wrap;
+   background-position: center;
+   height: 100vh;
+
+   background-size: cover;
+   background: linear-gradient(to right top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('../assets/img/ba1.jpg');
+   justify-content: end;
+   align-items: end;
+
+
+}
+
+.BSAS__contenedor__texto {
+   width: 40%;
+   color: white;
+   margin: 50px;
+   text-align: right;
+}
+
+.BSAS__contenedor__texto p {
+   margin-bottom: 20px;
+}
+
+.BSAS__contenedor__a {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: end;
+
+}
+
+.BSAS__a__izq {
+   padding: 10px;
+   color: white;
+   text-decoration: none;
+   border: 1px solid white;
+   border-radius: 4px;
+   margin-right: 10px;
+}
+
+.BSAS__a__der {
+   padding: 10px;
+   color: white;
+   text-decoration: none;
+   border: 1px solid green;
+   border-radius: 4px;
+   background-color: green;
+}
+
+.oradores__contenedor__titulo {
+   text-align: center;
+   margin-top: 15px;
+}
+
+.contenedorTarjetas {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 80%;
+   margin: auto;
+   align-content: center;
+   text-align: left;
+padding-top:20px;
+
+}
+
+.presentar_doc {
+   font-size: 0.8em;
+   margin-top: 10px;
+}
+
+.tarjeta {
+
+   width: 220px;
+   padding: 20px;
+   margin: 15px;
+}
+
+
+.tarjeta_tickets  {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 220px;
+   padding: 20px;
+   margin: 5px;
+   border-radius: 5px;
+  }
+  
+.tarjeta_tickets h3{
+   margin-bottom:30px;
+}
+.parrafo_tarjeta{
+   margin-bottom:10px;
+}
+
+.tarjeta_tickets_estudiante {
+   border: solid 1px rgb(10, 119, 213);
+}
+
+.tarjeta_tickets_trainee {
+   border: solid 1px green;
+}
+
+.tarjeta_tickets_junior {
+   border: solid 1px rgb(235, 196, 70);
+}
+
+.tarjeta img {
+   width: 100%;
+   border-radius: 10px;
+}
+
+
+.programas {
+   margin-top: 10px;
+   margin-bottom: 5px;
+   display: flex;
+   padding: 3px;
+}
+
+.programas h4 {
+   margin-right: 5px;
+   border-radius: 5px;
+   color: white;
+   padding: 4px;
+   text-align: center;
+}
+
+.programas .programas__js {
+   color: #000;
+   background-color: rgb(235, 196, 70);
+}
+
+.programas__rct {
+   background-color: rgb(228, 47, 2);
+}
+
+.programas__stu {
+   background-color: rgb(10, 119, 213);
+}
+
+.programas__ngs {
+   background-color: rgb(137, 140, 143);
+}
+
+.contenedor__Lugar {
+   display: flex;
+}
+
+@media only screen and (max-width: 400px) {
+   .contenedor__Lugar {
+      display: block;
+   }
+}
+
+.Lugar__img {
+   width: 50%;
+   background-size: 100%;
+   background-size: cover;
+   background-image: url(../assets/img/honolulu.jpg);
+   height: 60vh;
+}
+
+.Lugar__texto {
+   background-color: rgb(70, 76, 82);
+   color: white;
+   padding: 20px;
+   padding-bottom: 30px;
+   width: 50%;
+}
+
+@media only screen and (max-width: 400px) {
+   .Lugar__img {
+
+      width: 100%;
+   }
+
+   .Lugar__texto {
+
+      width: 100%;
+      padding: 15px;
+   }
+}
+
+.Lugar__texto p {
+   margin-bottom: 20px;
+}
+
+.Lugar__texto a {
+   color: white;
+   text-decoration: none;
+   border: 1px solid white;
+   border-radius: 4px;
+   padding: 4px;
+}
+
+.formulario__orador, .venta_valor_ticket_contenedor {
+   text-align: center;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   margin-right: 10px;
+   margin-left: 10px;
+
+}
+
+.casilleros {
+  
+   margin-top: 10px;
+   width: 100%;
+   }
+
+   .contenedor_label{
+      display:flex;
+      flex-wrap: wrap;
+   justify-content: center;
+margin-top:5px;
+   }
+
+   .label{
+      
+      margin:3px;
+      text-align: left;
+     
+
+   }
+   .selector{
+   height: 30px;
+}
+
+
+
+.casilleros input  {
+  
+
+   padding: 10px;
+   width: 510px;
+   height: 100px;
+}
+.casilleros_text_area{
+ width:500px;
+   height: 100px;
+   margin-top:10px;
+}
+
+.enviar input {
+   margin-top: 20px;
+   background-color: rgb(157, 201, 90);
+   border: none;
+   width: 100%;
+   height: 40px;
+   color: white;
+}
+.botones input {
+   margin-top: 20px;
+   background-color: rgb(157, 201, 90);
+   border: none;
+   border-radius: 5px;
+   width: 250px;
+   height: 40px;
+   color: white;
+}
+.aplicar:hover{
+   background-color: rgb(231, 245, 210);
+   color: black;
+}
+.total_pagar{
+   margin:auto;
+   
+   margin-top: 20px;
+   width:500px;
+   height: 40px;
+   background-color: rgb(189, 223, 244);
+   border: none;
+   border-radius: 5px;
+}
+.total_pagar p{
+   text-align:left;
+   padding:10px;
+}
+
+@media only screen and (max-width: 500px) {
+   textarea {
+
+      width: 400px;
+      height: 50px;
+
+   }
+}
+
+.contenedor__footer {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   height: 100px;
+
+   background-image: linear-gradient(to right top, #1c3643, #1e4255, #1f4e67, #215b7a, #24678e);
+
+
+   list-style: none;
+}
+
+
+.nav__footer a {
+   color: white;
+   list-style: none;
+   text-decoration: none;
+   margin: 15px;
+   font-size: 1.1rem;
+}
+
+=======
 * {
    margin: 0;
    padding: 0;
@@ -299,3 +685,4 @@
    font-size: 1.1rem;
 }
 
+>>>>>>> 696bd8051950b8d615cbc6e82836d9a44d5c9e20
