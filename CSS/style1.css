@@ -168,22 +168,24 @@ padding-top:20px;
 }
 
 .tarjeta_tickets_estudiante {
-   border: solid 1px rgb(10, 119, 213);
+   border: solid 3px rgb(10, 119, 213);
 }
 
 .tarjeta_tickets_trainee {
-   border: solid 1px green;
+   border: solid 3px green;
 }
 
 .tarjeta_tickets_junior {
-   border: solid 1px rgb(235, 196, 70);
+   border: solid 3px rgb(235, 196, 70);
 }
 
 .tarjeta img {
    width: 100%;
    border-radius: 10px;
 }
-
+.tarjeta_tickets:hover{
+  background-color: rgb(216, 238, 238);
+}
 
 .programas {
    margin-top: 10px;
@@ -329,7 +331,7 @@ margin-top:5px;
    background-color: rgb(157, 201, 90);
    border: none;
    border-radius: 5px;
-   width: 250px;
+   width: 350px;
    height: 40px;
    color: white;
 }
@@ -341,7 +343,7 @@ margin-top:5px;
    margin:auto;
    
    margin-top: 20px;
-   width:500px;
+   width:700px;
    height: 40px;
    background-color: rgb(189, 223, 244);
    border: none;
@@ -630,13 +632,15 @@ margin-top:5px;
 }
 
 .casilleros {
-   margin-top: 20px;
+   margin-top: 10px;
    width: 100%;
+   
 
 }
 
-.casilleros input, textarea {
-   padding: 10px;
+
+.label input,select {
+   padding-left: 10px;
    width: 510px;
    height: 100px;
 }
@@ -658,6 +662,7 @@ margin-top:5px;
       
    }
 }
+
 
 .contenedor__footer {
    display: flex;
@@ -683,4 +688,8 @@ margin-top:5px;
    text-decoration: none;
    margin: 15px;
    font-size: 1.1rem;
+}
+
+.mostrar{
+   display:block;
 }
