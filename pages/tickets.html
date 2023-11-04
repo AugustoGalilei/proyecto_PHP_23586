@@ -58,10 +58,10 @@
     <section>
 
         <div class="contenedorTarjetas">
-            <div class="tarjeta_tickets tarjeta_tickets_estudiante parrafo_ampliar">
+            <div class="tarjeta_tickets tarjeta_tickets_estudiante ">
                 <h3>Estudiante</h3>
                 <p class="parrafo_tarjeta ">Tienen un descuento</p>
-                <h3 >80%</h3>
+                <h3>80%</h3>
                 <p class="presentar_doc">*presentar documentación</p>
             </div>
 
@@ -104,7 +104,7 @@
                         <label class="form-label" for="apellido">Apellido</label>
                         <div class="casilleros"></div>
                         <input class="form-control" id="apellido" style="width:350px; height:30px" type="text"
-                            name="apellido" placeholder="apellido"required >
+                            name="apellido" placeholder="apellido" required>
                         <div id="mje_error_apellido" class="invalid-feedback ">
                             <p>Ingrese su apellido</p>
                         </div>
@@ -116,48 +116,48 @@
                     <label for="correo">Correo</label>
                     <div class="casilleros"></div>
                     <input class="form-control" id="correo" style="width:700px; height:30px" type="email" name="correo"
-                        placeholder="correo"required>
-                    <div id="mje_error_correo" class="invalid-feedback " >
+                        placeholder="correo" required>
+                    <div id="mje_error_correo" class="invalid-feedback ">
                         <p>Ingrese su correo </p>
-                       
-                    </div>
-                   
-                </div>
-            </div>
 
+                    </div>
+
+                </div>
+
+            </div>
 
             <div class="contenedor_label">
                 <div class="label">
                     <label for="cantidad">Cantidad</label>
                     <div class="casilleros">
                         <input class="form-control" id="cantidad" style="width:350px; height:30px" type="number"
-                            name="cantidad" placeholder="cantidad" min="1" required> >
+                            name="cantidad" placeholder="cantidad" min="1" required> 
                         <div id="mje_error_cantidad" class="invalid-feedback ">
                             <p>Ingrese la cantidad de tickets</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="contenedor_label">
-                    <div class="label">
-                        <label for="categoria">Categoria</label>
-                        <div class="casilleros">
-                            <select class=" selector form-select" id="categoria"  style="width:350px; "required>
 
-                                <option value="0">Sin categoria</option>
-                                <option value="1">Estudiante</option>
-                                <option value="2">Trainee</option>
-                                <option value="3">Junior</option>
-                            </select>
+                <div class="label">
+                    <label for="categoria">Categoria</label>
+                    <div class="casilleros">
+                        <select class=" selector form-select" id="categoria" style="width:350px; " required>
 
-                            <div id="mje_error_categoria" class="invalid-feedback ">
-                                <p>Ingrese la categoria</p>
-                            </div>
+                            <option value="0">Sin categoria</option>
+                            <option value="1">Estudiante</option>
+                            <option value="2">Trainee</option>
+                            <option value="3">Junior</option>
+                        </select>
+
+                        <div id="mje_error_categoria" class="invalid-feedback ">
+                            <p>Ingrese la categoria</p>
                         </div>
                     </div>
                 </div>
+
             </div>
-            </div>
+           
 
             <div class="contenedor_total_pagar"></div>
             <div class="total_pagar" id="pago">
@@ -165,7 +165,7 @@
 
             </div>
             <div class="botones">
-                <input class="aplicar" type="reset"  value="Borrar" id="btn_borrar">
+                <input class="aplicar" type="reset" value="Borrar" id="btn_borrar">
                 <input class="aplicar" type="submit" onclick="resumen()" value="Resumen" id="btn_resumen">
             </div>
             </div>
