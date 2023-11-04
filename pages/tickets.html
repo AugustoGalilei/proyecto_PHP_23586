@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comprar Tickets</title>
-    <link rel="shortcut icon" href="../favicom.ico" type="image/x-icon">
+    <!--estilos-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <LINK REL=StyleSheet HREF="../CSS/style1.css" TYPE="text/css" MEDIA=screen>
+    <!--iconos-->
+    <link rel="shortcut icon" href="../favicom.ico" type="image/x-icon">
     <!-- fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,14 +32,14 @@
                     <a class="header__nav__ul__li__a laconferencia" href="../index.html">La conferencia</a>
                 </li>
                 <li class="header__nav__ul__li">
-                    <a class="header__nav__ul__li__a" href="#oradores">Los oradores</a>
+                    <a class="header__nav__ul__li__a" href="../index.html#oradores">Los oradores</a>
                 </li>
                 <li class="header__nav__ul__li">
-                    <a class="header__nav__ul__li__a" href="#lugar">El lugar y la
+                    <a class="header__nav__ul__li__a" href="../index.html#lugar">El lugar y la
                         fecha</a>
                 </li>
                 <li class="header__nav__ul__li">
-                    <a class="header__nav__ul__li__a" href="#formularioorador">Conviértete
+                    <a class="header__nav__ul__li__a" href="../index.html#formularioorador">Conviértete
                         en orador</a>
                 </li>
                 <li class="header__nav__ul__li ">
@@ -54,10 +58,10 @@
     <section>
 
         <div class="contenedorTarjetas">
-            <div class="tarjeta_tickets tarjeta_tickets_estudiante">
+            <div class="tarjeta_tickets tarjeta_tickets_estudiante parrafo_ampliar">
                 <h3>Estudiante</h3>
-                <p class="parrafo_tarjeta">Tienen un descuento</p>
-                <h3>80%</h3>
+                <p class="parrafo_tarjeta ">Tienen un descuento</p>
+                <h3 >80%</h3>
                 <p class="presentar_doc">*presentar documentación</p>
             </div>
 
@@ -75,6 +79,7 @@
             </div>
         </div>
     </section>
+
     <section class="venta_valor_ticket_contenedor">
 
         <span>Venta</span>
@@ -83,55 +88,87 @@
 
         <form action="" method="">
 
-            <div class="casilleros">
-                <label for="nombre"></label>
-                <input style="width:252px; height:30px" type="text" name="nombre" placeholder="Nombre" required>
-
-                <label for="apellido"></label>
-                <input style="width:252px; height:30px" type="text" name="apellido" placeholder="Apellido" required>
-            </div>
-
-            <div class="casilleros">
-                <label for="correo"></label>
-                <input style="width:510px; height:30px" type="email" name="correo" placeholder="Correo" required>
-                
-
-                    <div class="contenedor_label">
-                        <div class="label">
-                            <label for="cantidad">Cantidad</label>
-                            <div class="casilleros">
-                            <input style="width:250px; height:30px" type="number" name="cantidad" placeholder="cantidad"
-                                required min="1">
-                            </div>
+            <div class="contenedor_label">
+                <div class="label">
+                    <label class="form-label" for="nombre">Nombre</label>
+                    <div class="casilleros">
+                        <input class="form-control " id="nombre" style="width:350px; height:30px" type="text"
+                            name="nombre" placeholder="nombre" required>
+                        <div id="mje_error_nombre" class="invalid-feedback ">
+                            <p>Ingrese su nombre</p>
                         </div>
-                    
-                    <div >
-                        <div class="label">
-                            <label for="categoria">Categoria</label>
-                            <div class="casilleros"></div>
-                            <select class="selector" name="categoria" style="width:250px;">
-                                <option value="junior">Junior</option>
-                                <option value="trainee">Trainee</option>
-                                <option value="estudiante">Estudiante</option>
-
-                            </select>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-
-
-
-
-                    <div class="contenedor_total_pagar"></div>
-                    <div class="total_pagar">
-                        <p>Total a Pagar: $</p>
-                    </div>
-                    <div class="botones">
-                        <input class="aplicar" type="reset" value="Borrar">
-                        <input class="aplicar" type="submit" value="Resumen">
                     </div>
                 </div>
+                <div>
+                    <div class="label">
+                        <label class="form-label" for="apellido">Apellido</label>
+                        <div class="casilleros"></div>
+                        <input class="form-control" id="apellido" style="width:350px; height:30px" type="text"
+                            name="apellido" placeholder="apellido"required >
+                        <div id="mje_error_apellido" class="invalid-feedback ">
+                            <p>Ingrese su apellido</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor_label">
+                <div class="label">
+                    <label for="correo">Correo</label>
+                    <div class="casilleros"></div>
+                    <input class="form-control" id="correo" style="width:700px; height:30px" type="email" name="correo"
+                        placeholder="correo"required>
+                    <div id="mje_error_correo" class="invalid-feedback " >
+                        <p>Ingrese su correo </p>
+                       
+                    </div>
+                   
+                </div>
+            </div>
+
+
+            <div class="contenedor_label">
+                <div class="label">
+                    <label for="cantidad">Cantidad</label>
+                    <div class="casilleros">
+                        <input class="form-control" id="cantidad" style="width:350px; height:30px" type="number"
+                            name="cantidad" placeholder="cantidad" min="1" required> >
+                        <div id="mje_error_cantidad" class="invalid-feedback ">
+                            <p>Ingrese la cantidad de tickets</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contenedor_label">
+                    <div class="label">
+                        <label for="categoria">Categoria</label>
+                        <div class="casilleros">
+                            <select class=" selector form-select" id="categoria"  style="width:350px; "required>
+
+                                <option value="0">Sin categoria</option>
+                                <option value="1">Estudiante</option>
+                                <option value="2">Trainee</option>
+                                <option value="3">Junior</option>
+                            </select>
+
+                            <div id="mje_error_categoria" class="invalid-feedback ">
+                                <p>Ingrese la categoria</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="contenedor_total_pagar"></div>
+            <div class="total_pagar" id="pago">
+                <p>Total a Pagar: $</p>
+
+            </div>
+            <div class="botones">
+                <input class="aplicar" type="reset"  value="Borrar" id="btn_borrar">
+                <input class="aplicar" type="submit" onclick="resumen()" value="Resumen" id="btn_resumen">
+            </div>
+            </div>
 
 
 
@@ -154,6 +191,10 @@
         </nav>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
     <script src="../JS/venta-tickets.js"></script>
 </body>
 </body>
