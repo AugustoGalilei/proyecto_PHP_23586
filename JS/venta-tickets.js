@@ -112,7 +112,7 @@ function borrar ()  {
   quitarClaseError  ();
 }
 btn_resumen.addEventListener('submit',resumen);
-/*btn_borrar.addEventListener('click',borrar);*/
+btn_borrar.addEventListener('click',borrar);
 
 
 
