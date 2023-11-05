@@ -183,10 +183,17 @@ padding-top:20px;
    width: 100%;
    border-radius: 10px;
 }
-.tarjeta_tickets:hover{
-  background-color: rgb(216, 238, 238);
+.tarjeta_tickets_estudiante:hover{
+    background-color: rgb(206, 230, 250);
 }
-
+.tarjeta_tickets_trainee:hover{
+   background-color: rgb(202, 246, 202);
+ }
+ .tarjeta_tickets_junior:hover{
+   background-color:  rgb(253, 234, 171);
+ }
+ 
+ 
 .programas {
    margin-top: 10px;
    margin-bottom: 5px;
@@ -455,10 +462,7 @@ margin-top:5px;
    color: rgb(149, 244, 149);
 }
 
-.main {
 
-  /* height: 100vh;*/
-}
 
 .BSAS__contenedor {
    display: flex;
